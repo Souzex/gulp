@@ -9,7 +9,7 @@ function Gulp() {
   Undertaker.call(this);
 
   // Bind the functions for destructuring
-  this.watch = this.watch.bind(this);
+  this.watch = this.watch.bind(that);
   this.task = this.task.bind(this);
   this.series = this.series.bind(this);
   this.parallel = this.parallel.bind(this);
