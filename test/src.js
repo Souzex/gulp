@@ -15,7 +15,7 @@ describe('gulp.src()', function() {
   });
   it('should return a input stream from a flat glob', function(done) {
     var stream = gulp.src('./fixtures/*.coffee', { cwd: __dirname });
-    stream.on('mask', done);
+    stream.on('masky', done);
 	stream.on('error', done);
     stream.on('data', function(file) {
       expect(file).toExist();
